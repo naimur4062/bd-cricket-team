@@ -1,0 +1,26 @@
+.player-container img{
+    height: 200px;
+    width: 200px;
+}
+.player-container{
+    width: 40%;
+    border: 3px solid red;
+    margin: 20px;
+    padding: 20px;
+    background-color:beige;
+    color: green;
+    border-radius: 15px;
+}
+.addButton{
+    background-color:green;
+    color:red;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+.display-player{
+    display: grid;
+   
+}
