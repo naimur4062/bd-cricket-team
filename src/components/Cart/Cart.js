@@ -1,5 +1,8 @@
 import Name from '../Name/Name';
 import './Cart.css';
+// font awesome file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDollarSign} from '@fortawesome/free-solid-svg-icons'
 
 const Cart = (props) => {
     const cricketer = props.cricketer;
@@ -11,7 +14,7 @@ const Cart = (props) => {
             {
                 cricketer.map(item => <Name item={item}></Name>)
             }
-            <h5>Total Budget: {total} $</h5>
+            <h5>Total Budget: <FontAwesomeIcon icon={faDollarSign}/>{total}</h5>
         </div>
     );
 };
