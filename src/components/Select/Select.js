@@ -16,14 +16,16 @@ const Select = () => {
         const newCricketer = [...cricketer, player];
         setCricketer(newCricketer);
     }
-  
+
     return (
-        <div className="players">
-            <div className="select-container">
-                <h1>The Bangladesh team of fifteen members.</h1>
-                {
-                    players.map(player => <Player player={player}  handleAddPlayer={handleAddPlayer}></Player>)
-                }
+        <div className="players mt-5">
+            <div>
+                <h1 className="heading">The Bangladesh team of fifteen members.</h1>
+                <div className="select-container">
+                    {
+                        players.map(player => <Player player={player} handleAddPlayer={handleAddPlayer}></Player>)
+                    }
+                </div>
             </div>
             <div className="cart-container">
                 <Cart cricketer={cricketer}></Cart>

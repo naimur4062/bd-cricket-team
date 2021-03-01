@@ -1,18 +1,17 @@
-// import React, { useState } from 'react';
 import Name from '../Name/Name';
+import './Cart.css';
 
 const Cart = (props) => {
     const cricketer = props.cricketer;
-    const total = cricketer.reduce((total, element) => total + element.salary, 0)
-    console.log(total)
+    const total = cricketer.reduce((total, element) => total + element.salary, 0);
     return (
-        <div>
-            <h2>The final team</h2>
+        <div className="cart">
+            <h3>The final squad</h3>
             <h4>Players: {cricketer.length}</h4>
             {
                 cricketer.map(item => <Name item={item}></Name>)
             }
-            <p>Total Budget: {total} $</p>
+            <h5>Total Budget: {total} $</h5>
         </div>
     );
 };
